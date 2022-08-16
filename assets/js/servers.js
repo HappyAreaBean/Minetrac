@@ -91,7 +91,7 @@ export class ServerRegistration {
             if (typeof playerCount !== 'number') {
               this._app.tooltip.hide()
             } else {
-              this._app.tooltip.set(pos.left, pos.top, 10, 10, `${formatNumber(playerCount)} Players<br>${formatTimestampSeconds(this._graphData[0][id])}`)
+              this._app.tooltip.set(pos.left, pos.top, 10, 10, `${formatNumber(playerCount)} 個玩家<br>${formatTimestampSeconds(this._graphData[0][id])}`)
             }
           } else {
             this._app.tooltip.hide()
@@ -117,7 +117,7 @@ export class ServerRegistration {
         {
           stroke: '#E9E581',
           width: 2,
-          value: (_, raw) => `${formatNumber(raw)} Players`,
+          value: (_, raw) => `${formatNumber(raw)} 個玩家`,
           spanGaps: true,
           points: {
             show: false
@@ -284,9 +284,9 @@ export class ServerRegistration {
       <div class="column column-status">
         <h3 class="server-name"><span class="${this._app.favoritesManager.getIconClass(this.isFavorite)}" id="favorite-toggle_${this.serverId}"></span> ${this.data.name}</h3>
         <span class="server-error" id="error_${this.serverId}"></span>
-        <span class="server-label" id="player-count_${this.serverId}">Players: <span class="server-value" id="player-count-value_${this.serverId}"></span></span>
-        <span class="server-label" id="peak_${this.serverId}">${this._app.publicConfig.graphDurationLabel} Peak: <span class="server-value" id="peak-value_${this.serverId}">-</span></span>
-        <span class="server-label" id="record_${this.serverId}">Record: <span class="server-value" id="record-value_${this.serverId}">-</span></span>
+        <span class="server-label" id="player-count_${this.serverId}">玩家: <span class="server-value" id="player-count-value_${this.serverId}"></span></span>
+        <span class="server-label" id="peak_${this.serverId}">${this._app.publicConfig.graphDurationLabel} 高峰: <span class="server-value" id="peak-value_${this.serverId}">-</span></span>
+        <span class="server-label" id="record_${this.serverId}">最高紀錄: <span class="server-value" id="record-value_${this.serverId}">-</span></span>
         <span class="server-label" id="version_${this.serverId}"></span>
       </div>
       <div class="column column-graph" id="chart_${this.serverId}"></div>`

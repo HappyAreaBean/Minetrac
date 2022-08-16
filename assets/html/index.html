@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap"> 
 
 	<link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<meta charset="UTF-8">
 
@@ -25,7 +27,7 @@
 	<div id="status-overlay">
 		<img class="logo-image" src="../images/logo.svg">
 		<h1 class="logo-text">Minetrack</h1>
-		<div id="status-text">Connecting...</div>
+		<div id="status-text">正在連接...</div>
 	</div>
 
 	<div id="push">
@@ -36,13 +38,14 @@
 			<div class="header-possible-row-break column-left">
 				<img class="logo-image" src="../images/logo.svg">
 				<h1 class="logo-text">Minetrack</h1>
-				<p class="logo-status">Counting <span class="global-stat" id="stat_totalPlayers">0</span> players on <span class="global-stat" id="stat_networks">0</span> Minecraft servers.</p>
+				<p class="logo-status">正在 <span class="global-stat" id="stat_networks">0</span> 個 Minecraft 伺服器上計算著 <span class="global-stat" id="stat_totalPlayers">0</span> 個玩家</p>
+				<p class="logo-status">圖表下方所顯示的時間是 <b>UTC</b>，其他的時間都是 <b>GMT+8</b></p>
 			</div>
 
 			<div class="header-possible-row-break column-right">
-				<div id="sort-by" class="header-button header-button-single"><span class="icon-sort-amount-desc"></span> Sort By<br><strong id="sort-by-text">...</strong></div>
+				<div id="sort-by" class="header-button header-button-single"><span class="icon-sort-amount-desc"></span> 排序依據<br><strong id="sort-by-text">...</strong></div>
 				
-				<div id="settings-toggle" class="header-button header-button-single" style="margin-left: 20px;"><span class="icon-gears"></span> Graph Controls</div>
+				<div id="settings-toggle" class="header-button header-button-single" style="margin-left: 20px;"><span class="icon-gears"></span> 圖表<br>控制</div>
 			</div>
 		</header>
 
@@ -53,9 +56,9 @@
 				<div id="big-graph-checkboxes"></div>
 
 				<span class="graph-controls-setall">
-					<a minetrack-show-type="all" class="button graph-controls-show"><span class="icon-eye"></span> Show All</a>
-					<a minetrack-show-type="none" class="button graph-controls-show"><span class="icon-eye-slash"></span> Hide All</a>
-					<a minetrack-show-type="favorites" class="button graph-controls-show"><span class="icon-star"></span> Only Favorites</a>
+					<a minetrack-show-type="all" class="button graph-controls-show"><span class="icon-eye"></span> 顯示全部</a>
+					<a minetrack-show-type="none" class="button graph-controls-show"><span class="icon-eye-slash"></span> 隱藏所有</a>
+					<a minetrack-show-type="favorites" class="button graph-controls-show"><span class="icon-star"></span> 僅收藏</a>
 				</span>
 			</div>
 		</div>
@@ -65,8 +68,12 @@
 	</div>
 
 	<footer id="footer">
-		<span class="icon-code"></span> Powered by open source software - <a href="https://github.com/Cryptkeeper/Minetrack">make it your own!</a>
+		<i class="fa-solid fa-copyright"></i> HappyAreaBean | <span class="icon-code"></span> 由開源軟件 Minetrack 提供支持 —— <a href="https://github.com/Cryptkeeper/Minetrack">讓它成為你自己的！</a>
 	</footer>
+	
+	<!-- Cloudflare Web Analytics -->
+	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dec4024503e747e08ddeefd11adae279"}'></script>
+	<!-- End Cloudflare Web Analytics -->
 
 </body>
 
