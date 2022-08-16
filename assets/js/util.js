@@ -101,13 +101,13 @@ export function formatMinecraftVersions (versions, knownVersions) {
 export function formatTimestampSeconds (secs) {
   const date = new Date(0)
   date.setUTCSeconds(secs)
-  return date.toLocaleTimeString()
+  return date.toLocaleTimeString('en-US', { timeZone: 'Asia/Hong_Kong' })
 }
 
 export function formatDate (secs) {
   const date = new Date(0)
   date.setUTCSeconds(secs)
-  return date.toLocaleDateString()
+  return date.toLocaleDateString('en-US', { timeZone: 'Asia/Hong_Kong' })
 }
 
 export function formatPercent (x, over) {
