@@ -6,17 +6,24 @@
 
 	<link rel="stylesheet" href="../css/main.css">
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap"> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap">
 
-	<link rel="icon" type="image/svg+xml" href="../images/logo.svg">
-	
+	<link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+	<link rel="icon" type="image/ico" href="../images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#21690f">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<meta charset="UTF-8">
 
 	<script defer src="../js/main.js"></script>
 
-	<title>Minetrack</title>
+	<title>TrackMC</title>
 
 </head>
 
@@ -25,8 +32,7 @@
 	<div id="tooltip"></div>
 
 	<div id="status-overlay">
-		<img class="logo-image" src="../images/logo.svg">
-		<h1 class="logo-text">Minetrack</h1>
+		<img class="logo-image" src="../images/logo-top-layput.svg">
 		<div id="status-text">正在連接...</div>
 	</div>
 
@@ -36,15 +42,14 @@
 
 		<header>
 			<div class="header-possible-row-break column-left">
-				<img class="logo-image" src="../images/logo.svg">
-				<h1 class="logo-text">Minetrack</h1>
+				<img class="logo-image" src="../images/default-monochrome.svg">
 				<p class="logo-status">正在 <span class="global-stat" id="stat_networks">0</span> 個 Minecraft 伺服器上計算著 <span class="global-stat" id="stat_totalPlayers">0</span> 個玩家</p>
 				<p class="logo-status">圖表下方所顯示的時間是 <b>UTC</b>，其他的時間都是 <b>GMT+8</b></p>
 			</div>
 
 			<div class="header-possible-row-break column-right">
 				<div id="sort-by" class="header-button header-button-single"><span class="icon-sort-amount-desc"></span> 排序依據<br><strong id="sort-by-text">...</strong></div>
-				
+
 				<div id="settings-toggle" class="header-button header-button-single" style="margin-left: 20px;"><span class="icon-gears"></span> 圖表<br>控制</div>
 			</div>
 		</header>
@@ -68,9 +73,9 @@
 	</div>
 
 	<footer id="footer">
-		<i class="fa-solid fa-copyright"></i> HappyAreaBean | <span class="icon-code"></span> 由開源軟件 Minetrack 提供支持 —— <a href="https://github.com/Cryptkeeper/Minetrack">讓它成為你自己的！</a>
+		<i class="fa-solid fa-copyright"></i> TrackMC | <span class="icon-code"></span> 由開源軟件 Minetrack 提供支持 — <a href="https://github.com/Cryptkeeper/Minetrack">讓它成為你自己的！</a>
 	</footer>
-	
+
 	<!-- Cloudflare Web Analytics -->
 	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "dec4024503e747e08ddeefd11adae279"}'></script>
 	<!-- End Cloudflare Web Analytics -->

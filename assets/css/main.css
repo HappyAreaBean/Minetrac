@@ -104,7 +104,6 @@ header .column-right {
 }
 
 header .logo-image {
-  --fixed-logo-image-size: 36px;
   width: var(--fixed-logo-image-size);
   height: var(--fixed-logo-image-size);
   margin-right: 5px;
@@ -185,9 +184,10 @@ footer a:hover {
 }
 
 #status-overlay .logo-image {
-  --fixed-logo-image-size: 72px;
-  width: var(--fixed-logo-image-size);
+  --fixed-logo-image-size: 85px;
   height: var(--fixed-logo-image-size);
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 /* Floating tooltip */
